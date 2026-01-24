@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
     if (argc < 2) {
         printf("Password length not specified, generating %d chars len\n", len);
     } else {
-        for (int i = 0; i < argc; i++) {
+        for (int i = 1; i < argc; i++) {
             char* cur = argv[i];
             if (strcmp(cur, "-s") == 0) {
                 spec = true;
