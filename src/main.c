@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
             if (strcmp(cur, "-s") == 0) {
                 spec = true;
             } else {
-                len = atoi(argv[1]);
+                len = atoi(argv[i]);
                 if ((len == 0) && (strcmp(cur, "0") != 0)) {
                     printf("Usage: genpas [-s for spec chars] count\n");
                     return 1;
